@@ -1,0 +1,17 @@
+version: "3.6"
+services:
+  localstack-dynamodb:
+    container_name: "localstack-dynamodb"
+    image: localstack/localstack:latest
+    network_mode: bridge
+    ports:
+      - "127.0.0.1:4566:4566"
+      - "127.0.0.1:4571:4571"
+    environment:
+      - AWS_DEFAULT_REGION=ap-southeast-1
+      - SERVICES=dynamodb
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "/tmp/localstack:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - ./init-scripts:/docker-entrypoint-initaws.d

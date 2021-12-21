@@ -1,0 +1,15 @@
+server:
+  port: 8089
+amazon:
+    dynamodb:
+        endpoint: http://localhost:4566
+    aws:
+        accesskey: ABCDPOIERGDBXCNX #Pode colcoar qualquer string pra teste
+        secretkey: ABCDPOIERGDBXCNX #Pode colcoar qualquer string pra teste
+        region: us-east-1
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui
