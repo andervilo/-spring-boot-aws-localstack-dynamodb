@@ -1,4 +1,4 @@
-package br.com.andervilo.awsapi.awsapi.entities;
+package br.com.andervilo.awsapi.awsapi.application.entities;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAutoGenerateStrategy;
@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @DynamoDBTable(tableName = "movies")
-public class Movie {
+public class MovieEntity {
 
     @DynamoDBHashKey
     @DynamoDBGeneratedUuid(DynamoDBAutoGenerateStrategy.CREATE)

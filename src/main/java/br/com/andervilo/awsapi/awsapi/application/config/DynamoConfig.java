@@ -1,4 +1,4 @@
-package br.com.andervilo.awsapi.awsapi.config;
+package br.com.andervilo.awsapi.awsapi.application.config;
 
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
@@ -16,7 +16,7 @@ import lombok.Data;
 
 @Data
 @Configuration
-@EnableDynamoDBRepositories(basePackages = "br.com.andervilo.awsapi.awsapi.repositories")
+@EnableDynamoDBRepositories(basePackages = "br.com.andervilo.awsapi.awsapi.application.repositories")
 public class DynamoConfig {
 
     @Value("${amazon.dynamodb.endpoint}")
