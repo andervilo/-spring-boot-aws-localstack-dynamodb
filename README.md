@@ -1,4 +1,4 @@
-﻿# Spring Bboot AWS localstack dynamodb
+﻿# Spring Bboot AWS localstack Dynamodb Arquitetura Hexagonal
  
  ### Requisitos
  - Java 11
